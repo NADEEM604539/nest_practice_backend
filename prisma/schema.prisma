@@ -31,3 +31,6 @@ model Article{
   user User @relation(fields: [userId], references: [id])
   createdAt DateTime @default(now())
 }
+
+
+i am main branch of prisma ksjflasjkfalsdf  ksdfa now main changin stuff
