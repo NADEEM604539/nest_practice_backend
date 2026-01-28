@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0 # You can specify a different version here
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      # Required: set a strong root password
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: articles
+
+    volumes:
+      # Persist data on the host machine in a named volume
+      - mysql-data:/var/lib/mysql
+
+volumes:
+  mysql-data:
