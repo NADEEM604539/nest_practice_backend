@@ -31,3 +31,5 @@ model Article{
   user User @relation(fields: [userId], references: [id])
   createdAt DateTime @default(now())
 }
+
+skdjfalsdf doing stuff iin main
